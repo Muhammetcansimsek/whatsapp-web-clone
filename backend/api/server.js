@@ -33,10 +33,10 @@ mongoose.connect(uri, {
 });
 
 // Routes
-const userRoutes = require('./routes/users');
-const authRoutes = require('./routes/auth');
-const profileRoutes = require('./routes/profile');
-const messageRoutes = require('./routes/messageRoutes');
+const userRoutes = require('../routes/users');
+const authRoutes = require('../routes/auth');
+const profileRoutes = require('../routes/profile');
+const messageRoutes = require('../routes/messageRoutes');
 
 app.use('/api/users', userRoutes);
 app.use('/api/auth', authRoutes);
